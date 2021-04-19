@@ -54,7 +54,7 @@ This project is part of [DIH^2](http://www.dih-squared.eu/). For more informatio
 
 The ROSE-AP building block is one of the functional cores of the RoboWeldAR system (along with the robotic control module), and encapsulates the 3D reconstruction and weld seam detection components.
 
-![High-level architecture](rose-ap-arch.jpg)
+![High-level architecture](rose-ap-arch.png)
 
 - Inputs: An array of photos from different angles, camera pose for each photo 
 
