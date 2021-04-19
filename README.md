@@ -30,7 +30,7 @@ Note that the CII Best Practices questionaire will request evidence of tooling u
 ```
 
 ```text
-One or two sentence preamble describing the element
+This repository contains the source code to the RoboWeldAR ROSE-AP module. Given a set of photographs of a metallic object destined for welding, this module produces 3D-reconstructed model of that object, along with proposed welding paths.
 ```
 
 This project is part of [DIH^2](http://www.dih-squared.eu/). For more information check the RAMP Catalogue entry for the
@@ -52,7 +52,15 @@ This project is part of [DIH^2](http://www.dih-squared.eu/). For more informatio
 ## Background
 
 ```text
-Background information and links to relevant terms
+The ROSE-AP building block is one of the functional cores of the RoboWeldAR system (along with the robotic control module), and encapsulates the 3D reconstruction and weld seam detection components.
+
+![High-level architecture](rose-ap-arch.jpg)
+
+- Inputs: An array of photos from different angles, camera pose for each photo 
+
+- Outputs: 3D reconstructed object, welding trajectories (paths and poses) that represent where welding targets should be welded and how they should be approached. 
+
+- Description: The most time-consuming part of the RoboWeldAR workflow is the 3-D reconstruction, which is why in our implementation we have developed a logger which broadcasts updates to the Orion Context Broker in NGSIv2 format, so that the user can monitor the progress. This ROSE-AP will be of interest to manufacturing entities that already use robotic welding processes in their workflow. The only modification to the hardware required is the addition of an off-the-shelf RGB camera, and a way to collect robot pose for each photograph capture so that it can be provided to the ROSE-AP component. After the output is produced and sent back to the end user, the end user must provide a way to provide the produced welding trajectory to their robot. As long as the robot frame has not been translated or rotated between the photo capture and welding processes, the welding trajectory will remain valid and ready for utilization. 
 ```
 
 ## Install
