@@ -1,0 +1,19 @@
+site_name: <site-name>
+site_url: https://<site-url>
+repo_url: https://github.com/<repo_url>
+site_description: RAMP Documentation
+docs_dir: docs
+site_dir: html
+edit_uri: edit/master/doc/
+markdown_extensions: [toc,fenced_code]
+use_directory_urls: false
+theme: readthedocs
+pages:
+  - Home: 'index.md'
+  - 'Getting Started' : 'getting-started.md'
+  - 'User & Programmers Manual':
+    - 'Architecture' : 'architecture.md'
+    - 'API' : 'api.md'
+    - 'User Guide': 'usermanual.md'
+  - 'Installation & Administration Manual': 
+    - 'Installation Guide': 'installationguide.md'

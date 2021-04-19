@@ -1,0 +1,71 @@
+{
+  "name": "TTE.project1",
+  "license": "MIT",
+  "description": "Component for RAMP",
+  "version": "0.0.1",
+  "main": "src/init",
+  "engines": {
+    "node": ">=10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jason-fox/TTE.project1.git"
+  },
+  "scripts": {
+    "start": "node ./src/init",
+    "test": "nyc --reporter=text mocha -- --recursive 'test/**/*.js' --reporter spec --exit",
+    "test:coverage": "nyc --reporter=lcov mocha -- --recursive 'test/**/*.js' ",
+    "test:coveralls": "npm run test:coverage && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
+    "lint": "eslint src/ test/ --cache --fix",
+    "prettier": "prettier --config .prettierrc.json --write **/**/*.js  **/*.js *.js",
+    "prettier:text": "prettier  --parser markdown '*.md' 'docker/*.md' 'docs/*.md' --tab-width 4 --print-width 120 --write --prose-wrap always",
+    "lint:md": "remark  -f '*.md' 'docker/*.md' 'docs/*.md'",
+    "lint:text": "textlint 'README.md' 'docs/*.md'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "coveralls": "^3.1.0",
+    "eslint": "~7.5.0",
+    "eslint-config-tamia": "~7.2.5",
+    "eslint-plugin-prettier": "~3.1.2",
+    "husky": "~4.2.5",
+    "mocha": "8.0.1",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^15.1.0",
+    "prettier": "~2.0.5",
+    "remark-cli": "^6.0.1",
+    "remark-preset-lint-recommended": "^3.0.4",
+    "textlint": "~11.7.6",
+    "textlint-rule-common-misspellings": "~1.0.1",
+    "textlint-rule-terminology": "~2.1.4",
+    "textlint-rule-write-good": "~1.6.2"
+  },
+  "keywords": [],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --config .prettierrc.json --write",
+      "git add"
+    ],
+    "*.md": [
+      "prettier --no-config --tab-width 4 --print-width 120 --write --prose-wrap always",
+      "git add"
+    ],
+    "*.yml": [
+      "prettier --no-config --write",
+      "git add"
+    ]
+  },
+  "textlint": {
+    "rules": {
+      "common-misspellings": true,
+      "terminology": {
+        "defaultTerms": true
+      }
+    }
+  }
+}
