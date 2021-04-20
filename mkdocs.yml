@@ -1,7 +1,7 @@
-site_name: <site-name>
-site_url: https://<site-url>
-repo_url: https://github.com/<repo_url>
-site_description: RAMP Documentation
+site_name: RoboWeldAR ROSE-AP
+site_url: null
+repo_url: https://github.com/ikh-innovation/roboweldar-rose-ap.git
+site_description: RoboWeldAR ROSE-AP Documentation
 docs_dir: docs
 site_dir: html
 edit_uri: edit/master/doc/
