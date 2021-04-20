@@ -52,7 +52,7 @@ This project is part of [DIH^2](http://www.dih-squared.eu/). For more informatio
 ## Background
 
 
-The ROSE-AP building block is one of the functional cores of the RoboWeldAR system (along with the robotic control module), and encapsulates the 3D reconstruction and weld seam detection components.
+This repository contains the source code to the RoboWeldAR ROSE-AP module. Given a set of photographs of a metallic object destined for welding, this module produces 3D-reconstructed model of that object, along with proposed welding paths. The ROSE-AP building block is one of the functional cores of the RoboWeldAR system (along with the robotic control module), and encapsulates the 3D reconstruction and weld seam detection components. 
 
 ![High-level architecture](rose-ap-arch.png)
 
@@ -65,45 +65,29 @@ The ROSE-AP building block is one of the functional cores of the RoboWeldAR syst
 
 ## Install
 
-```text
-How to install the component
-
-Information about how to install the <Name of component> can be found at the corresponding section of the
+Information about how to install the component can be found at the corresponding section of the
 [Installation & Administration Guide](docs/installationguide.md).
 
 A `Dockerfile` is also available for your use - further information can be found [here](docker/README.md)
 
-```
 
 ## Usage
 
-```text
-How to use the component
-
-Information about how to use the <Name of component> can be found in the [User & Programmers Manual](docs/usermanual.md).
+Information about how to use the component can be found in the [User & Programmers Manual](docs/usermanual.md).
 
 The following features are listed as [deprecated](docs/deprecated.md).
-```
 
 ## API
 
-```text
 Definition of the API interface:
 
-Information about the API of  the <Name of component> can be found in the [API documentation](docs/api.md).
+Information about the API of  the component can be found in the [API documentation](docs/api.md).
 
-```
 
 ## Testing
 
-```text
-How to test the component
+For performing a basic end-to-end test, you have to follow the steps detailed in the [Test documentation](docs/tests.md).
 
-For performing a basic end-to-end test, you have to follow the step below. A detailed description about how to run tests can be found [here].
-
-> npm test
-
-```
 
 ## License
 
