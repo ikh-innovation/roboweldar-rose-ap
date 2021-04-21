@@ -91,4 +91,4 @@ For performing a basic end-to-end test, you have to follow the steps detailed in
 
 ## License
 
-[MIT](LICENSE) © <TTE>
+[Apache](LICENSE) © <IKH Innovation>
