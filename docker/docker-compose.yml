@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  server:
+    image: roboweldar-server:1.0.0
+    container_name: roboweldar-server
+    volumes: ./:/var/www/html/
+    ports:
+      - "3306:3306"
+  3d-reconstruction:
+    image: roboweldar-3d-reconstruction:1.0.0
+    container_name: roboweldar-3d-reconstruction
+    depends_on:
+      - server
+    ports:
+      - "8080:8080"
+    network_mode: "host"
+  weld-seam-detection:
+      depends_on:
+       - server
+      image: roboweldar-weld-seam-detection:1.0.0
+      container_name: roboweldar-weld-seam-detection
+      ports:
+       - '9090:80'
