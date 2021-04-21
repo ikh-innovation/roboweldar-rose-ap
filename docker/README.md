@@ -4,63 +4,26 @@
 Amend as necessary...
 ```
 
-## How to build an image
+## How to run the component instance
 
-The [Dockerfile](https://github.com/jason-fox/TTE.project1/blob/master/docker/Dockerfile) associated with this image can
-be used to build an image in several ways:
-
--   By default, the `Dockerfile` retrieves the **latest** version of the codebase direct from GitHub (the `build-arg` is
-    optional):
+The [Compose](docker-compose.yml) file associated with this repository can
+be used to run the component in the following way:
 
 ```console
-docker build -t <component> . --build-arg DOWNLOAD=latest
+docker-compose up .
 ```
 
--   You can alter this to obtain the last **stable** release run this `Dockerfile` with the build argument
-    `DOWNLOAD=stable`
+This [Compose](docker-compose.yml) file defines three services: The [server module](https://github.com/ikh-innovation/roboweldar-networking/tree/master/server), the [3D reconstruction module](https://github.com/ikh-innovation/roboweldar-3d-reconstruction), and the [weld seam detection module](https://github.com/ikh-innovation/roboweldar-weld-seam-detection).
 
-```console
-docker build -t <component> . --build-arg DOWNLOAD=stable
-```
+The server module is instantiated by pulling an image that’s built from the Dockerfile in the `server` directory of the respective repository, using the integration pipeline from Dockerhub. It then binds the container and the host machine to the exposed port, 3000 (HTTP) and 3001 (Websocket). 
+The same is valid for the 3D reconstruction module and the weld seam detection module.
 
--   You can also download a specific release by running this `Dockerfile` with the build argument `DOWNLOAD=<version>`
 
-```console
-docker build -t <component> . --build-arg DOWNLOAD=1.7.0
-```
+## Building the images locally
 
-## Building from your own fork
+If you would like the [Compose](docker-compose.yml) file to use locally built images of the above modules, you may opt to build them yourself. Docker build instructions are found in each respective repository.
 
-To download code from your own fork of the GitHub repository add the `GITHUB_ACCOUNT`, `GITHUB_REPOSITORY` and
-`SOURCE_BRANCH` arguments (default `master`) to the `docker build` command.
+- [Server docker instructions](https://github.com/ikh-innovation/roboweldar-networking/blob/master/server/README.md)
+- [3D reconstruction  docker instructions](https://github.com/ikh-innovation/roboweldar-3d-reconstruction/blob/master/docker/README.md)
+- [Weld seam detection docker instructions](https://github.com/ikh-innovation/roboweldar-weld-seam-detection/blob/master/docker/README.md)
 
-```console
-docker build -t <component> . \
-    --build-arg GITHUB_ACCOUNT=<your account> \
-    --build-arg GITHUB_REPOSITORY=<your repo> \
-    --build-arg SOURCE_BRANCH=<your branch>
-```
-
-## Building from your own source files
-
-Alternatively, if you want to build directly from your own sources, please copy the existing `Dockerfile` into file the
-root of the repository and amend it to copy over your local source using :
-
-```Dockerfile
-COPY . /opt/component/
-```
-
-Full instructions can be found within the `Dockerfile` itself.
-
-### Using PM2
-
-The Component within the Docker image can be run encapsulated within the [pm2](http://pm2.keymetrics.io/) Process
-Manager by adding the `PM2_ENABLED` environment variable.
-
-```console
-docker run --name component -e PM2_ENABLED=true -d fiware/component-ul
-```
-
-Use of pm2 is **disabled** by default. It is unnecessary and counterproductive to add an additional process manager if
-your dockerized environment is already configured to restart Node.js processes whenever they exit (e.g. when using
-[Kubernetes](https://kubernetes.io/))
