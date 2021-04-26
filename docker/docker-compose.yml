@@ -1,21 +1,22 @@
 version: "3.7"
 services:
   coordinator:
+    # image: "roboweldar-coordinator:latest"
     image: roboweldar/roboweldar-coordinator
     container_name: roboweldar-coordinator
     volumes: 
-      - ./roboweldar-networking:/home/node/app/uploads
+      - ./roboweldar-coordinator:/home/node/app/uploads
     ports:
       - "3000:3000"
       - "3001:3001"
     network_mode: "host"
   3d-reconstruction:
+    # image: "roboweldar-3d-reconstruction:latest"
     image: roboweldar/roboweldar-3d-reconstruction
     container_name: roboweldar-3d-reconstruction
     entrypoint: ["python3", "src/rest/client.py", "--host", "localhost", "--orion_cb_host", "localhost", "--orion_cb_port", "1026"]
     volumes: 
-      - ./roboweldar-3d-reconstruction:/opt/roboweldar-3d-reconstruction/reconstruction_data
-      - ./example_files:/opt/roboweldar-3d-reconstruction/test/box_reconstruction
+      - ./roboweldar-3d-reconstruction:/app/roboweldar-3d-reconstruction/reconstruction_data
     depends_on:
       - coordinator
     ports:
@@ -27,9 +28,9 @@ services:
       - coordinator
     image: roboweldar/roboweldar-weld-seam-detection
     container_name: roboweldar-weld-seam-detection
-    # TODO: Change .npy output dir to weld_seam_detection_data/, so that we can mount it as a volume
-    # volumes: 
-    #   - ./roboweldar-weld-seam-detection:/opt/roboweldar-weld-seam-detection/weld_seam_detection_data
+    # TODO: Thanos to check this dir
+    volumes: 
+      - ./roboweldar-weld-seam-detection:/opt/roboweldar-weld-seam-detection/welding_paths_output
     ports:
       - "3000:3000"
       - "3001:3001"
