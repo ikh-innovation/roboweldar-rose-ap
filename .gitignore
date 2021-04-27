@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Application data folders and test file
+roboweldar-3d-reconstruction/
+roboweldar-coordinator/
+roboweldar-weld-seam-detection/
+
