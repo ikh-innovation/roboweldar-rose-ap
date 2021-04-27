@@ -1,3 +1,3 @@
-[submodule "src/roboweldar-networking"]
-	path = src/roboweldar-networking
+[submodule "src/roboweldar_networking"]
+	path = src/roboweldar_networking
 	url = git@github.com:ikh-innovation/roboweldar-networking.git
