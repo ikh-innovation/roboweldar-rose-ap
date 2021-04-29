@@ -6,32 +6,25 @@ services:
     container_name: roboweldar-coordinator
     volumes: 
       - ./roboweldar-coordinator:/home/node/app/uploads
-    ports:
-      - "3000:3000"
-      - "3001:3001"
     network_mode: "host"
   3d-reconstruction:
     # image: "roboweldar-3d-reconstruction:latest"
     image: roboweldar/roboweldar-3d-reconstruction
     container_name: roboweldar-3d-reconstruction
+    runtime: nvidia
     entrypoint: ["python3", "src/rest/client.py", "--host", "localhost", "--orion_cb_host", "localhost", "--orion_cb_port", "1026"]
     volumes: 
       - ./roboweldar-3d-reconstruction:/app/roboweldar-3d-reconstruction/reconstruction_data
     depends_on:
       - coordinator
-    ports:
-      - "3000:3000"
-      - "3001:3001"
     network_mode: "host"
   weld-seam-detection:
     depends_on:
       - coordinator
     image: roboweldar/roboweldar-weld-seam-detection
     container_name: roboweldar-weld-seam-detection
+    runtime: nvidia
     # TODO: Thanos to check this dir
     volumes: 
       - ./roboweldar-weld-seam-detection:/opt/roboweldar-weld-seam-detection/welding_paths_output
-    ports:
-      - "3000:3000"
-      - "3001:3001"
     network_mode: "host"
