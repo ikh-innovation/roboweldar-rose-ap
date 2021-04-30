@@ -12,6 +12,14 @@ The directory `test/example_files` contains the following folders:
 
 - `output`: This folder contains the subfolders `mesh` and `transformed_mesh`. `mesh` is the standard output of the photogrammetry pipeline, while `transformed_mesh` is the output of the transformation pipeline. Both folders contain `.mtl`, `.obj` and `.png` files.
 
+### Cloning the repository
+
+```bash
+git clone --recursive git@github.com:ikh-innovation/roboweldar-rose-ap.git
+```
+
+Since the submodules in this repository were added using SSH, you will need to have SSH access enabled on your Github account to fully clone this repository.
+
 
 ### Running the example
 
