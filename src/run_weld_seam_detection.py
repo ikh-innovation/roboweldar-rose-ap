@@ -18,7 +18,8 @@ def weld_seam_detection():
     # or by copying the example transformed mesh from test/example_files/output/transformed_mesh into 
     # docker/roboweldar-coordinator/mesh
 
-    signal_to_weld_seam_detection()
+    import requests
+    requests.get("http://localhost:3000/start_welding_seam_detection")
 
     # To download it, we can either check the dir, or use the GET request of the coordinator API to
     # download it: get_trajectory_file()

@@ -30,7 +30,7 @@ services:
     image: roboweldar/roboweldar-weld-seam-detection
     container_name: roboweldar-weld-seam-detection
     runtime: nvidia
-    # TODO: Thanos to check this dir
+    entrypoint: ["python3", "networking/client.py", "--host", "localhost"]
     volumes: 
       - ./roboweldar-weld-seam-detection:/opt/roboweldar-weld-seam-detection/welding_paths_output
     # ports:
