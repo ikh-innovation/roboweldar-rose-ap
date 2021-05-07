@@ -73,5 +73,19 @@ Alternatively, you can manually navigate to the `docker/roboweldar-networking/me
 
 #### Running the weld seam detection module
 
-TODO: @Thanos write your instructions here.
+In the same terminal, run 
+
+```bash
+python run_weld_seam_detection.py
+```
+
+This script uses the `roboweldar-coordinator` REST API to transmit a message to the `roboweldar-weld-seam-detection` service, which will fetch the previously reconstructed mesh file from the `roboweldar-coordinator` filesystem and start computations to produce welding trajectories(as npy and mesh datatypes). The result will be placed in the newly created (created on runtime) `docker/roboweldar-networking/welding_trajectory/` directory.
+
+To fetch it via the API, use the following functions in the [roboweldar-networking](https://github.com/ikh-innovation/roboweldar-networking/blob/b2322131baeab5870961acaf77151bb8c2f0ba14/interfaces/template.py#L70) module:
+
+```python
+get_mesh_files(host, httpPort, path_to_dir, mesh_files)
+get_trajectory_file(host, httpPort, path_to_dir, trajectory_file_name)
+```
+Alternatively, you can manually navigate to the `docker/roboweldar-networking/welding_trajectory/` and inspect the files.
 
