@@ -14,6 +14,8 @@ Weld seam detection docker build status:
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/roboweldar/roboweldar-weld-seam-detection?style=plastic)
 
 ![License: Apache 2.0](https://img.shields.io/github/license/ikh-innovation/roboweldar-rose-ap)
+
+Not yet implemented:
 [![CI](https://github.com/ramp-eu/TTE.project1/workflows/CI/badge.svg)](https://github.com/ramp-eu/TTE.project1/actions?query=workflow%3ACI)
 [![Coverage Status](https://coveralls.io/repos/github/ramp-eu/TTE.project1/badge.svg?branch=master)](https://coveralls.io/github/ramp-eu/TTE.project1?branch=master)
 
