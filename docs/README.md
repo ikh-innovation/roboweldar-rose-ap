@@ -2,16 +2,16 @@
 
 ## Contents
 
--   [Background](#background)
-    -   [Use Case Description](#use-case-description)
-    -   [Proposed Solution](#proposed-solution)
--   [Mid-Term Setup Implementation Description](#mid-term-setup-implementation-description)
--   [Demo](#demo)
-    -   [Install](#install)
-    -   [Usage](#usage)
-    -   [API](#api)
-    -   [Testing](#testing)
--   [License](#license)
+- [Background](#background)
+  - [Use Case Description](#use-case-description)
+  - [Proposed Solution](#proposed-solution)
+- [Mid-Term Setup Implementation Description](#mid-term-setup-implementation-description)
+- [Demo](#demo)
+  - [Install](#install)
+  - [Usage](#usage)
+- [API](#api)
+  - [Testing](#testing)
+- [License](#license)
 
 ## Background
 
@@ -20,24 +20,25 @@
 #### Proposed Solution
 
 ## Setup Overview
-```
-Overview the Docker-Based Implementation contributed in this Setup (This section is associated with the slide "Setup Overview: Docker-based Implementation" in D3)
+
+```Overview the Docker-Based Implementation contributed in this Setup (This section is associated with the slide "Setup Overview: Docker-based Implementation" in D3)
 ```
 
 #### Architecture
+
 A more detailed description of this architecture is available here [Architecture Description](architecture.md)
-```
-(This section is associated with the slide "Setup Overview: Architecture" in D3)
+
+```(This section is associated with the slide "Setup Overview: Architecture" in D3)
 ```
 
+```Background information and links to relevant terms
 ```
-Background information and links to relevant terms
-```
-## Demo
+
 #### Install
+
 In order to install the components of our demo, follow the instructions provided in this file: [Installation & Administration Guide](installationguide.md)
-```
-Within the docs folder, the "installationguide.md" is to be filled with information on how to install the demo components
+
+```Within the docs folder, the "installationguide.md" is to be filled with information on how to install the demo components
 and their dependencies.
 
 A convenient simulator or simulated/dummy datasets will be contributed when the source code, binaries, and/or functionality
@@ -45,16 +46,18 @@ of a given component cannot be shared as part of the public demo due to privacy-
 ```
 
 #### Usage
+
 Information about how to use the demo components can be found in the [User & Programmers Manual](usermanual.md).
-```
-Within the docs folder, the "installationguide.md" is to be filled with information on how to use and configure the
+
+```Within the docs folder, the "installationguide.md" is to be filled with information on how to use and configure the
 components of the demo.
 ```
 
 #### API
-Detailed descriptions of the demo component APIs are available in the [API documentation](api.md) 
-```
-Within the docs folder, the "api.md" is to be filled with the definition of component APIs.
+
+Detailed descriptions of the demo component APIs are available in the [API documentation](api.md)
+
+```Within the docs folder, the "api.md" is to be filled with the definition of component APIs.
 
 Special emphasis will be put on the description of NGSI APIs, providing tas many details as possible on the 
 the subscriptions, registrations, requests, and responses associated with each component of the demo. 
@@ -68,8 +71,7 @@ use the demo.
 
 #### Testing
 
-```
-This section will contribute step-by-step procedures to perform a basic end-to-end test of the setup 
+```This section will contribute step-by-step procedures to perform a basic end-to-end test of the setup
 features described in the mid-term review demo. For each test, the definition of the step-by-tep procedure
 may consist of:
 - Description of the use case that the test aim to cover
@@ -78,8 +80,6 @@ may consist of:
 code, binaries, and/or functionality of a given component cannot be shared as part of the public demo.
 ```
 
-
-
 ## License
 
-[MIT](LICENSE) © <TTE>
+[Apache](LICENSE) © IKH 2021
