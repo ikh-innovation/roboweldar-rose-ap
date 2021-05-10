@@ -2,6 +2,7 @@
 
 [![Documentation Status](https://readthedocs.org/projects/roboweldar-rose-ap/badge/?version=latest)](https://roboweldar-rose-ap.readthedocs.io/en/latest/?badge=latest)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4822/badge)](https://bestpractices.coreinfrastructure.org/projects/4822)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/97c7794bcfc4435e807d3f6838088cfc)](https://www.codacy.com/gh/ikh-innovation/roboweldar-rose-ap/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ikh-innovation/roboweldar-rose-ap&amp;utm_campaign=Badge_Grade)
 
 Coordinator docker build status:
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/roboweldar/roboweldar-coordinator?style=plastic)
@@ -15,7 +16,7 @@ Weld seam detection docker build status:
 ![License: Apache 2.0](https://img.shields.io/github/license/ikh-innovation/roboweldar-rose-ap)
 [![CI](https://github.com/ramp-eu/TTE.project1/workflows/CI/badge.svg)](https://github.com/ramp-eu/TTE.project1/actions?query=workflow%3ACI)
 [![Coverage Status](https://coveralls.io/repos/github/ramp-eu/TTE.project1/badge.svg?branch=master)](https://coveralls.io/github/ramp-eu/TTE.project1?branch=master)
-[![Codacy grade](https://img.shields.io/codacy/grade/99310c5c4332439197633912a99d2e3c)](https://app.codacy.com/manual/jason-fox/TTE.project1)
+
 
 ```text
 
