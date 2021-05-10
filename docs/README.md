@@ -3,14 +3,14 @@
 ## Contents
 
 - [Background](#background)
-  - [Use Case Description](#use-case-description)
-  - [Proposed Solution](#proposed-solution)
+- [Use Case Description](#use-case-description)
+- [Proposed Solution](#proposed-solution)
 - [Mid-Term Setup Implementation Description](#mid-term-setup-implementation-description)
 - [Demo](#demo)
-  - [Install](#install)
-  - [Usage](#usage)
+- [Install](#install)
+- [Usage](#usage)
 - [API](#api)
-  - [Testing](#testing)
+- [Testing](#testing)
 - [License](#license)
 
 ## Background
