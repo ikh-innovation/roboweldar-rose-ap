@@ -1,5 +1,6 @@
 # RoboWeldAR ROSE-AP
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/54a91d2ce6e748e39a6e51f1d79e20a5)](https://app.codacy.com/gh/ikh-innovation/roboweldar-rose-ap?utm_source=github.com&utm_medium=referral&utm_content=ikh-innovation/roboweldar-rose-ap&utm_campaign=Badge_Grade_Settings)
 [![Documentation Status](https://readthedocs.org/projects/roboweldar-rose-ap/badge/?version=latest)](https://roboweldar-rose-ap.readthedocs.io/en/latest/?badge=latest)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4822/badge)](https://bestpractices.coreinfrastructure.org/projects/4822)
 
