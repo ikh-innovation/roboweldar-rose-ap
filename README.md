@@ -55,7 +55,7 @@ This project is part of [DIH^2](http://www.dih-squared.eu/). For more informatio
 
 - [Background](#background)
 - [Install](#install)
-- [Cloning this repository](#cloning)
+- [Cloning this repository](#cloning-this-repository)
 - [Usage](#usage)
 - [API](#api)
 - [Testing](#testing)
