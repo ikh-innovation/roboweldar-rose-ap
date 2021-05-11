@@ -63,8 +63,7 @@ sudo chmod +x entrypoint.sh
 ./entrypoint.sh
 ```
 
-The `entrypoint.sh` script sets up the docker volumes which you can use to peek inside the containers' data directories, and successively runs
-This [Compose](docker-compose.yml) file defines three services: The [server module](https://github.com/ikh-innovation/roboweldar-networking/tree/master/server), the [3D reconstruction module](https://github.com/ikh-innovation/roboweldar-3d-reconstruction), and the [weld seam detection module](https://github.com/ikh-innovation/roboweldar-weld-seam-detection).
+The `entrypoint.sh` script sets up the docker volumes which you can use to peek inside the containers' data directories, and successively runs `docker-compose.yml`. This [Compose](docker-compose.yml) file defines three services: The [server module](https://github.com/ikh-innovation/roboweldar-networking/tree/master/server), the [3D reconstruction module](https://github.com/ikh-innovation/roboweldar-3d-reconstruction), and the [weld seam detection module](https://github.com/ikh-innovation/roboweldar-weld-seam-detection).
 
 The server module is instantiated by pulling an image that’s built from the Dockerfile in the `server` directory of the respective repository, using the integration pipeline from Dockerhub. It then binds the container and the host machine to the exposed port, 3000 (HTTP) and 3001 (Websocket).
 The same is valid for the 3D reconstruction module and the weld seam detection module.
