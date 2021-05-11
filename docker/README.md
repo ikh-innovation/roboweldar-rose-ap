@@ -68,6 +68,8 @@ The `entrypoint.sh` script sets up the docker volumes which you can use to peek 
 The server module is instantiated by pulling an image that’s built from the Dockerfile in the `server` directory of the respective repository, using the integration pipeline from Dockerhub. It then binds the container and the host machine to the exposed port, 3000 (HTTP) and 3001 (Websocket).
 The same is valid for the 3D reconstruction module and the weld seam detection module.
 
+A tutorial on how the component can be used can be found [here](https://github.com/ikh-innovation/roboweldar-rose-ap/blob/main/docs/usermanual.md).
+
 ## Building the images locally
 
 If you would like the [Compose](docker-compose.yml) file to use locally built images of the above modules, you may opt to build them yourself. Docker build instructions are found in each respective repository.
