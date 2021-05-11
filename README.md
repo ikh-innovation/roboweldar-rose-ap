@@ -55,6 +55,7 @@ This project is part of [DIH^2](http://www.dih-squared.eu/). For more informatio
 
 - [Background](#background)
 - [Install](#install)
+- [Cloning this repository](#cloning)
 - [Usage](#usage)
 - [API](#api)
 - [Testing](#testing)
@@ -71,6 +72,14 @@ This repository contains the source code to the RoboWeldAR ROSE-AP module. Given
 - Outputs: 3D reconstructed object, welding trajectories (paths and poses) that represent where welding targets should be welded and how they should be approached.
 
 - Description: The most time-consuming part of the RoboWeldAR workflow is the 3-D reconstruction, which is why in our implementation we have developed a logger which broadcasts updates to the Orion Context Broker in NGSIv2 format, so that the user can monitor the progress. This ROSE-AP will be of interest to manufacturing entities that already use robotic welding processes in their workflow. The only modification to the hardware required is the addition of an off-the-shelf RGB camera, and a way to collect robot pose for each photograph capture so that it can be provided to the ROSE-AP component. After the output is produced and sent back to the end user, the end user must provide a way to provide the produced welding trajectory to their robot. As long as the robot frame has not been translated or rotated between the photo capture and welding processes, the welding trajectory will remain valid and ready for utilization.
+
+### Cloning this repository
+
+```bash
+git clone --recursive git@github.com:ikh-innovation/roboweldar-rose-ap.git
+```
+
+Since the submodules in this repository were added using SSH, you will need to have SSH access enabled on your Github account to fully clone this repository.
 
 ## Install
 
