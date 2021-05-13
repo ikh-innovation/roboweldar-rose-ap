@@ -10,7 +10,7 @@ def threedee_reconstruction():
     # send robot pose and photo data to roboweldar-coordinator REST API which then signals a WS message to
     # roboweldar-3d-reconstruction service to fetch these files and start computations. 
     send_dummy_files(endpoint="cache_images", host="localhost",
-        path_to_files=os.path.join(ROOT_DIR, "test", "example_files", "raw"))
+        path_to_files=os.path.join(ROOT_DIR, "test", "example_files", "images"))
 
     # roboweldar-3d-reconstruction should produce a 3D model expressed in the world/robot frame (a.k.a. the
     # transformed mesh) This mesh file (transformed_mesh.obj) will be uploaded to the
