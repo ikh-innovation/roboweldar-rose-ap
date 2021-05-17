@@ -12,7 +12,7 @@ The directories `test/example_files*` each contain the following folders:
 
 A total of three examples have been compiled.
 
-### Example 1
+### Example 1 (good)
 
 | Image dataset | 3D reconstructed model + proposed seams | Simplified 3D model |
 |---------------|-----------------------------------------|---------------------|
@@ -20,7 +20,7 @@ A total of three examples have been compiled.
 
 This example dataset consists of 22 images and associated pose files. The object is fairly reflective, but less so than Example 3. The resulting quality of reconstruction is thus acceptable, and the proposed welding seams were detected reliably.
 
-### Example 2
+### Example 2 (good)
 
 | Image dataset | 3D reconstructed model + proposed seams | Simplified 3D model |
 |---------------|-----------------------------------------|---------------------|
@@ -28,7 +28,7 @@ This example dataset consists of 22 images and associated pose files. The object
 
 This example dataset consists of 25 images and associated pose files. The mock object is not reflective (wood) which improves the quality of reconstruction. The proposed welding seams have been detected reliably. 
 
-### Example 3
+### Example 3 (bad)
 
 | Image dataset | 3D reconstructed model + proposed seams | Simplified 3D model |
 |---------------|-----------------------------------------|---------------------|
