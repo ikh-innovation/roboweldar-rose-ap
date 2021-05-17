@@ -1,18 +1,28 @@
 # User Manual
 
-## Example
+## Test examples
 
 ### Directory structure
 
-The directory `test/example_files` contains the following folders:
+The directories `test/example_files*` each contain the following folders:
 
 - `raw`: this folder contains a number of photographs taken around the periphery of a steel welding target. For each image, it also contains the corresponding robot pose (in the world frame) at the time the photograph was taken, in `.npy` format. A human readable `poses.txt` file is included, where each row corresponds to a flattened augmented rotation matrix of 12 elements (9 rotation values, 3 position values). The `camera.yaml` file contains the camera intrinsics.
 
-- `cameras`: After the completion of `StructureFromMotion` node in AliceVision Meshroom a `cameras.sfm` file is produced. Inside this file all the views' instrics and extrinsics are listed. Under the `poses` keyword we can find the views' poses. This particular `cameras.sfm` file, is the result of running the default photogrammetry pipeline on the photographs in the `raw` folder.
+- `mesh`: This folder contains the output of the 3d reconstruction module, which is the transformed mesh with respect to the robot's coordinate system (world). `mesh` is the standard output of the photogrammetry pipeline (omitted here), while `transformed_mesh` is the output of the transformation pipeline. This folder contains `.mtl`, `.obj` and `.png` files.
 
-- `output`: This folder contains the subfolders `mesh` and `transformed_mesh`. `mesh` is the standard output of the photogrammetry pipeline, while `transformed_mesh` is the output of the transformation pipeline. Both folders contain `.mtl`, `.obj` and `.png` files.
+- `welding_trajectory`: This folder contains the results of the weld seam detection module. `simplified_mesh.obj` is the result of simplifying th emesh to a maximum number of 400 triangles, and is useful for path planning, as the few number of elements reduces the computational time for arriving at a solution. `welding_paths.npy` contains the detected welding seams in the form of a numpy data structure, while `trajectories_mesh.obj` contains the 3-D representation of the latter. 
 
-### Cloning the repository
+A total of three examples have been compiled.
+
+### Example 1
+
+| Image dataset | 3D reconstructed model + proposed seams | Simplified 3D model |
+|---------------|-----------------------------------------|---------------------|
+|   ![Example 1 dataset](assets/example_1_collage.png)            |      ![Example 1 reconstruction](assets/example_1_reconstruction.gif)                                  |          ![Example 1 simplified mesh](assets/example_1_simplified_mesh.png)           |
+
+
+
+## Cloning the repository
 
 ```bash
 git clone --recursive git@github.com:ikh-innovation/roboweldar-rose-ap.git
@@ -21,9 +31,9 @@ git clone --recursive git@github.com:ikh-innovation/roboweldar-rose-ap.git
 Since the submodules in this repository were added using SSH, you will need to have SSH access enabled on your Github account to fully clone this repository.
 
 
-### Running the example
+## Running the component instance
 
-#### Setting up your dependencies
+### Setting up your dependencies
 
 First, make sure you have installed the docker Nvidia driver:
 
@@ -54,7 +64,7 @@ pip install -r roboweldar_networking/interfaces/requirements.txt
 Now you should have the required packages installed in the Python venv on your host, so that you can proceed with running the example. 
 
 
-#### Running the 3-D reconstruction module
+### Running the 3-D reconstruction module
 
 In the same terminal, run 
 
@@ -71,7 +81,7 @@ get_mesh_files(host, httpPort, path_to_dir, mesh_files)
 ```
 Alternatively, you can manually navigate to the `docker/roboweldar-networking/mesh/` and inspect the files.
 
-#### Running the weld seam detection module
+### Running the weld seam detection module
 
 In the same terminal, run 
 
@@ -88,4 +98,6 @@ get_mesh_files(host, httpPort, path_to_dir, mesh_files)
 get_trajectory_file(host, httpPort, path_to_dir, trajectory_file_name)
 ```
 Alternatively, you can manually navigate to the `docker/roboweldar-networking/welding_trajectory/` and inspect the files.
+
+
 
