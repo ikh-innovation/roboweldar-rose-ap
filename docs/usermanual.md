@@ -12,36 +12,7 @@ The directories `test/example_files*` each contain the following folders:
 
 - `welding_trajectory`: This folder contains the results of the weld seam detection module. `simplified_mesh.obj` is the result of simplifying th emesh to a maximum number of 400 triangles, and is useful for path planning, as the few number of elements reduces the computational time for arriving at a solution. `welding_paths.npy` contains the detected welding seams in the form of a numpy data structure, while `trajectories_mesh.obj` contains the 3-D representation of the latter. 
 
-A total of three examples have been compiled.
-
-### Example 1
-
-| Image dataset | 3D reconstructed model + proposed seams | Simplified 3D model |
-|---------------|-----------------------------------------|---------------------|
-|   <img src="assets/example_1_collage.png" width="300">            |      <img src="assets/example_1_reconstruction.gif" width="320">                                 |          <img src="assets/example_1_simplified_mesh.png" width="320">            |
-
-This example dataset consists of 15 images and associated pose files. The object appears reflective in the photos which adversely affects the quality of reconstruction. This has a direct effect on the reliability of the proposed welding seams. 
-
-
-### Example 2
-
-| Image dataset | 3D reconstructed model + proposed seams | Simplified 3D model |
-|---------------|-----------------------------------------|---------------------|
-|   <img src="assets/example_2_collage.png" width="300">            |      <img src="assets/example_2_reconstruction.gif" width="320">                                 |          <img src="assets/example_2_simplified_mesh.png" width="320">            |
-
-
-This example dataset consists of 25 images and associated pose files. The mock object is not reflective (wood) which improves the quality of reconstruction. The proposed welding seams have been detected reliably. 
-
-
-
-### Example 3
-
-| Image dataset | 3D reconstructed model + proposed seams | Simplified 3D model |
-|---------------|-----------------------------------------|---------------------|
-|   <img src="assets/example_3_collage.png" width="300">            |      <img src="assets/example_3_reconstruction.gif" width="320">                                 |          <img src="assets/example_3_simplified_mesh.png" width="320">            |
-
-
-This example dataset consists of 22 images and associated pose files. The mock object is fairly reflective, but less so than Example 1. The resulting quality of reconstruction is thus acceptable, and the proposed welding seams were detected reliably.
+A total of three examples have been compiled. A detailed description of these can be found [here](../test/README.md).
 
 
 ## Cloning the repository
