@@ -21,6 +21,14 @@ A total of three examples have been compiled.
 |   ![Example 1 dataset](assets/example_1_collage.png)            |      ![Example 1 reconstruction](assets/example_1_reconstruction.gif)                                  |          ![Example 1 simplified mesh](assets/example_1_simplified_mesh.png)           |
 
 
+### Example 2
+
+| Image dataset | 3D reconstructed model + proposed seams | Simplified 3D model |
+|---------------|-----------------------------------------|---------------------|
+|   ![Example 2 dataset](assets/example_2_collage.png)            |      ![Example 2 reconstruction](assets/example_2_reconstruction.gif)                                  |          ![Example 2 simplified mesh](assets/example_2_simplified_mesh.png)           |
+
+
+
 
 ## Cloning the repository
 
