@@ -1,4 +1,3 @@
-installationguide.md
 # Installation Guide
 
 To run the component instance, we recommend a Linux installation (preferably Ubuntu 18.04 or above), and the latest versions of Docker and Docker Compose. You will make sure to have a CUDA-compatible graphics card installed on your system, and the proprietary NVIDIA graphics drivers. Below you can find the steps required to get the dependencies installed before you attempt to run the instance.
