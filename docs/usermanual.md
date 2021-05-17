@@ -18,14 +18,14 @@ A total of three examples have been compiled.
 
 | Image dataset | 3D reconstructed model + proposed seams | Simplified 3D model |
 |---------------|-----------------------------------------|---------------------|
-|   ![Example 1 dataset](assets/example_1_collage.png)            |      ![Example 1 reconstruction](assets/example_1_reconstruction.gif)                                  |          ![Example 1 simplified mesh](assets/example_1_simplified_mesh.png)           |
+|   <img src="assets/example_1_collage.png" width="300">            |      <img src="assets/example_1_reconstruction.gif" width="320">                                 |          <img src="assets/example_1_simplified_mesh.png" width="320">            |
 
 
 ### Example 2
 
 | Image dataset | 3D reconstructed model + proposed seams | Simplified 3D model |
 |---------------|-----------------------------------------|---------------------|
-|   ![Example 2 dataset](assets/example_2_collage.png)            |      ![Example 2 reconstruction](assets/example_2_reconstruction.gif)                                  |          ![Example 2 simplified mesh](assets/example_2_simplified_mesh.png)           |
+|   <img src="assets/example_2_collage.png" width="300">            |      <img src="assets/example_2_reconstruction.gif" width="320">                                 |          <img src="assets/example_2_simplified_mesh.png" width="320">            |
 
 
 
@@ -33,7 +33,7 @@ A total of three examples have been compiled.
 
 | Image dataset | 3D reconstructed model + proposed seams | Simplified 3D model |
 |---------------|-----------------------------------------|---------------------|
-|   ![Example 3 dataset](assets/example_3_collage.png)            |      ![Example 3 reconstruction](assets/example_3_reconstruction.gif)                                  |          ![Example 3 simplified mesh](assets/example_3_simplified_mesh.png)           |
+|   <img src="assets/example_3_collage.png" width="300">            |      <img src="assets/example_3_reconstruction.gif" width="320">                                 |          <img src="assets/example_3_simplified_mesh.png" width="320">            |
 
 
 
