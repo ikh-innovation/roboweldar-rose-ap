@@ -42,9 +42,14 @@ This repository contains the source code to the RoboWeldAR ROSE-AP module. Given
 
 ![High-level architecture](rose-ap-arch.png)
 
+| Image dataset | 3D reconstructed model + proposed seams |
+|---------------|-----------------------------------------|
+|      <img src="docs/assets/example_3_collage.png" width="500">    |       <img src="docs/assets/example_3_reconstruction.gif" width="500">    |
+
+
 - Inputs: An array of photos from different angles, camera pose for each photo 
 
-- Outputs: 3D reconstructed object, welding trajectories (paths and poses) that represent where welding targets should be welded and how they should be approached.
+- Outputs: 3D reconstructed object, welding trajectories (paths and poses) that represent where welding targets should be welded and how they should be approached. A simplified mesh file is also produced, for use in robotic path planning computations.
 
 - Description: The most time-consuming part of the RoboWeldAR workflow is the 3-D reconstruction, which is why in our implementation we have developed a logger which broadcasts updates to the Orion Context Broker in NGSIv2 format, so that the user can monitor the progress. This ROSE-AP will be of interest to manufacturing entities that already use robotic welding processes in their workflow. The only modification to the hardware required is the addition of an off-the-shelf RGB camera, and a way to collect robot pose for each photograph capture so that it can be provided to the ROSE-AP component. After the output is produced and sent back to the end user, the end user must provide a way to provide the produced welding trajectory to their robot. As long as the robot frame has not been translated or rotated between the photo capture and welding processes, the welding trajectory will remain valid and ready for utilization.
 
