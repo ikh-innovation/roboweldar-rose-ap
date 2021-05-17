@@ -39,4 +39,4 @@ This example dataset consists of 25 images and associated pose files. The mock o
 |   <img src="../docs/assets/example_3_collage.png" width="300">            |      <img src="../docs/assets/example_3_reconstruction.gif" width="320">                                 |          <img src="../docs/assets/example_3_simplified_mesh.png" width="320">            |
 
 
-This example dataset consists of 22 images and associated pose files. The mock object is fairly reflective, but less so than Example 1. The resulting quality of reconstruction is thus acceptable, and the proposed welding seams were detected reliably.
+This example dataset consists of 22 images and associated pose files. The object is fairly reflective, but less so than Example 1. The resulting quality of reconstruction is thus acceptable, and the proposed welding seams were detected reliably.
