@@ -44,7 +44,7 @@ This repository contains the source code to the RoboWeldAR ROSE-AP module. Given
 
 | Image dataset | 3D reconstructed model + proposed seams |
 |---------------|-----------------------------------------|
-|      <img src="docs/assets/example_3_collage.png" width="500">    |       <img src="docs/assets/example_3_reconstruction.gif" width="500">    |
+|      <img src="docs/assets/example_1_collage.png" width="500">    |       <img src="docs/assets/example_1_reconstruction.gif" width="500">    |
 
 
 - Inputs: An array of photos from different angles, camera pose for each photo 
