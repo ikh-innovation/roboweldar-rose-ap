@@ -82,7 +82,7 @@ Information about the API of  the component can be found in the [API documentati
 
 ## Testing
 
-For performing a basic end-to-end test, you have to follow the steps detailed in the [Test documentation](docs/tests.md).
+For performing a basic end-to-end test, you have to follow the steps detailed in the [Test documentation](test/README.md).
 
 ## License
 
