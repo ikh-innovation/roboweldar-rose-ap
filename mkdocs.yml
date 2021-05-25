@@ -7,7 +7,7 @@ markdown_extensions: [toc,fenced_code]
 use_directory_urls: false
 theme: readthedocs
 nav:
-  - Home: 'index.md'
+  - Home: 'README.md'
   - User & Programmers Manual:
     - Architecture : 'architecture.md'
     - API : 'api.md'
