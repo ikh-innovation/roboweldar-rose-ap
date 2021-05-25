@@ -16,7 +16,7 @@ A total of three examples have been compiled.
 
 | Image dataset | 3D reconstructed model + proposed seams | Simplified 3D model |
 |---------------|-----------------------------------------|---------------------|
-|   <img src="../docs/assets/example_1_collage.png" width="300">            |      <img src="../docs/assets/example_1_reconstruction.gif" width="320">                                 |          <img src="../docs/assets/example_1_simplified_mesh.png" width="320">            |
+|   <img src="assets/example_1_collage.png" width="300">            |      <img src="assets/example_1_reconstruction.gif" width="320">                                 |          <img src="assets/example_1_simplified_mesh.png" width="320">            |
 
 This example dataset consists of 22 images and associated pose files. The object is fairly reflective, but less so than Example 3. The resulting quality of reconstruction is thus acceptable, and the proposed welding seams were detected reliably.
 
@@ -24,7 +24,7 @@ This example dataset consists of 22 images and associated pose files. The object
 
 | Image dataset | 3D reconstructed model + proposed seams | Simplified 3D model |
 |---------------|-----------------------------------------|---------------------|
-|   <img src="../docs/assets/example_2_collage.png" width="300">            |      <img src="../docs/assets/example_2_reconstruction.gif" width="320">                                 |          <img src="../docs/assets/example_2_simplified_mesh.png" width="320">            |
+|   <img src="assets/example_2_collage.png" width="300">            |      <img src="assets/example_2_reconstruction.gif" width="320">                                 |          <img src="assets/example_2_simplified_mesh.png" width="320">            |
 
 This example dataset consists of 25 images and associated pose files. The mock object is not reflective (wood) which improves the quality of reconstruction. The proposed welding seams have been detected reliably. 
 
@@ -32,7 +32,7 @@ This example dataset consists of 25 images and associated pose files. The mock o
 
 | Image dataset | 3D reconstructed model + proposed seams | Simplified 3D model |
 |---------------|-----------------------------------------|---------------------|
-|   <img src="../docs/assets/example_3_collage.png" width="300">            |      <img src="../docs/assets/example_3_reconstruction.gif" width="320">                                 |          <img src="../docs/assets/example_3_simplified_mesh.png" width="320">            |
+|   <img src="assets/example_3_collage.png" width="300">            |      <img src="assets/example_3_reconstruction.gif" width="320">                                 |          <img src="assets/example_3_simplified_mesh.png" width="320">            |
 
 This example dataset consists of 15 images and associated pose files. The object appears reflective in the photos which adversely affects the quality of reconstruction. This has a direct effect on the reliability of the proposed welding seams. 
 
