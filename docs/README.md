@@ -64,25 +64,23 @@ Since the submodules in this repository were added using SSH, you will need to h
 ## Install
 
 Information about how to install the component can be found at the corresponding section of the
-[Installation & Administration Guide](docs/installationguide.md).
+[Installation & Administration Guide](installationguide.md).
 
-A `Dockerfile` is also available for your use - further information can be found [here](docker/README.md)
+A `Dockerfile` is also available for your use - further information can be found [here](docker_guide.md)
 
 ## Usage
 
-Information about how to use the component can be found in the [User & Programmers Manual](docs/usermanual.md).
-
-The following features are listed as [deprecated](docs/deprecated.md).
+Information about how to use the component can be found in the [User & Programmers Manual](usermanual.md).
 
 ## API
 
 Definition of the API interface:
 
-Information about the API of  the component can be found in the [API documentation](docs/api.md).
+Information about the API of  the component can be found in the [API documentation](api.md).
 
 ## Testing
 
-For performing a basic end-to-end test, you have to follow the steps detailed in the [Test documentation](test/README.md).
+For performing a basic end-to-end test, you have to follow the steps detailed in the [Test documentation](test_examples.md).
 
 ## License
 
