@@ -2,6 +2,7 @@ site_name: RoboWeldAR ROSE-AP
 repo_url: https://github.com/ikh-innovation/roboweldar-rose-ap.git
 site_description: RoboWeldAR ROSE-AP Documentation
 docs_dir: .
+site_dir: ./html
 markdown_extensions: [toc,fenced_code]
 use_directory_urls: false
 theme: readthedocs
