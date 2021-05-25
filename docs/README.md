@@ -33,6 +33,7 @@ This project is part of [DIH^2](http://www.dih-squared.eu/). For more informatio
 - [Cloning this repository](#cloning-this-repository)
 - [Usage](#usage)
 - [API](#api)
+- [Architecture](#architecture)
 - [Testing](#testing)
 - [License](#license)
 
@@ -77,6 +78,10 @@ Information about how to use the component can be found in the [User & Programme
 Definition of the API interface:
 
 Information about the API of  the component can be found in the [API documentation](api.md).
+
+## Architecture
+
+A description of the architecture can be found in the [Architecture section](architecture.md).
 
 ## Testing
 
