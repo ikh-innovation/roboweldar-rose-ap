@@ -7,12 +7,12 @@ markdown_extensions: [toc,fenced_code]
 use_directory_urls: false
 theme: readthedocs
 nav:
-  - Home: '../'
+  - Home: 'index.md'
   - User & Programmers Manual:
     - Architecture : 'architecture.md'
     - API : 'api.md'
     - User Guide: 'usermanual.md'
-    - Test Examples: '../test/README.md'
+    - Test Examples: 'test_examples.md'
   - Installation & Administration Manual: 
-    - Installation Guide: 'docs/installationguide.md'
-    - Docker Guide: '../docker/README.md'
+    - Installation Guide: 'installationguide.md'
+    - Docker Guide: 'docker_guide.md'
