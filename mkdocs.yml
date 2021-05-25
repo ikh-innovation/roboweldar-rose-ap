@@ -1,17 +1,18 @@
 site_name: RoboWeldAR ROSE-AP
 repo_url: https://github.com/ikh-innovation/roboweldar-rose-ap.git
 site_description: RoboWeldAR ROSE-AP Documentation
-docs_dir: docs
+docs_dir: .
 site_dir: html
 markdown_extensions: [toc,fenced_code]
 use_directory_urls: false
 theme: readthedocs
 pages:
-  - Home: 'index.md'
-  - 'Getting Started' : 'getting-started.md'
+  - Home: 'README.md'
   - 'User & Programmers Manual':
-    - 'Architecture' : 'architecture.md'
-    - 'API' : 'api.md'
-    - 'User Guide': 'usermanual.md'
+    - 'Architecture' : 'docs/architecture.md'
+    - 'API' : 'docs/api.md'
+    - 'User Guide': 'docs/usermanual.md'
+    - 'Test Examples': 'test/README.md'
   - 'Installation & Administration Manual': 
-    - 'Installation Guide': 'installationguide.md'
+    - 'Installation Guide': 'docs/installationguide.md'
+    - 'Docker Guide': 'docker/README.md'
