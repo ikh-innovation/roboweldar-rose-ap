@@ -35,7 +35,7 @@ This project is part of [DIH^2](http://www.dih-squared.eu/). For more informatio
 - [API](#api)
 - [Architecture](#architecture)
 - [Testing](#testing)
-- [Contribution Guidelines](#contribution)
+- [Contribution Guidelines](#contribution-guidelines)
 - [License](#license)
 
 ## Background
