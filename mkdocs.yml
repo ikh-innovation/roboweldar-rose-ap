@@ -13,6 +13,7 @@ nav:
     - API : 'api.md'
     - User Guide: 'usermanual.md'
     - Test Examples: 'test_examples.md'
+    - Contribution Guidelines: 'contribution.md'
   - Installation & Administration Manual: 
     - Installation Guide: 'installationguide.md'
     - Docker Guide: 'docker_guide.md'

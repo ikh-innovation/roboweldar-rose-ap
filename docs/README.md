@@ -35,6 +35,7 @@ This project is part of [DIH^2](http://www.dih-squared.eu/). For more informatio
 - [API](#api)
 - [Architecture](#architecture)
 - [Testing](#testing)
+- [Contribution Guidelines](#contribution)
 - [License](#license)
 
 ## Background
@@ -86,6 +87,10 @@ A description of the architecture can be found in the [Architecture section](arc
 ## Testing
 
 For performing a basic end-to-end test, you have to follow the steps detailed in the [Test documentation](test_examples.md).
+
+## Contribution Guidelines
+
+For details on how to contribute, please refer to the [Contribution Guidelines](contribution.md).
 
 ## License
 
