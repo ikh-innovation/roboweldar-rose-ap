@@ -28,6 +28,7 @@ This project is part of [DIH^2](http://www.dih-squared.eu/). For more informatio
 
 ## Contents
 
+- [Summary](#summary)
 - [Background](#background)
 - [Install](#install)
 - [Cloning this repository](#cloning-this-repository)
@@ -37,6 +38,10 @@ This project is part of [DIH^2](http://www.dih-squared.eu/). For more informatio
 - [Testing](#testing)
 - [Contribution Guidelines](#contribution-guidelines)
 - [License](#license)
+
+## Summary
+
+Given a set of photographs of a metallic object destined for welding, this module produces 3D-reconstructed model of that object, along with proposed welding paths.
 
 ## Background
 
