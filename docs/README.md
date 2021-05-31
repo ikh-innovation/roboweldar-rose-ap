@@ -6,12 +6,15 @@
 
 Coordinator docker build status:
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/roboweldar/roboweldar-coordinator?style=plastic)
+[Coordinator Docker](https://hub.docker.com/r/roboweldar/roboweldar-coordinator)
 
 3D reconstruction docker build status:
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/roboweldar/roboweldar-3d-reconstruction?style=plastic)
+[3D reconstruction Docker](https://hub.docker.com/r/roboweldar/roboweldar-3d-reconstruction)
 
 Weld seam detection docker build status:
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/roboweldar/roboweldar-weld-seam-detection?style=plastic)
+[Weld seam detection Docker](https://hub.docker.com/r/roboweldar/roboweldar-weld-seam-detection)
 
 ![License: Apache 2.0](https://img.shields.io/github/license/ikh-innovation/roboweldar-rose-ap)
 

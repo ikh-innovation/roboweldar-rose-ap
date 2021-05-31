@@ -21,6 +21,14 @@ The same is valid for the 3D reconstruction module and the weld seam detection m
 
 A tutorial on how the component can be used can be found [here](https://github.com/ikh-innovation/roboweldar-rose-ap/blob/main/docs/usermanual.md).
 
+## Where to find the built images
+
+Built images for each dependency can be found on DockerHub:
+
+- [Coordinator Docker](https://hub.docker.com/r/roboweldar/roboweldar-coordinator)
+- [3D reconstruction Docker](https://hub.docker.com/r/roboweldar/roboweldar-3d-reconstruction)
+- [Weld seam detection Docker](https://hub.docker.com/r/roboweldar/roboweldar-weld-seam-detection)
+
 ## Building the images locally
 
 If you would like the [Compose](docker-compose.yml) file to use locally built images of the above modules, you may opt to build them yourself. Docker build instructions are found in each respective repository.
